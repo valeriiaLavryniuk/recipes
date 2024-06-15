@@ -1,27 +1,89 @@
 nav{
-    display: flex;
-    justify-content: center;
-    gap: 202px;
-    text-transform: uppercase;
-    font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 202px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.nav-item{
+  background-color: lightgray;
+  border-radius: 25px;
+	color: black;
 }
 
 .sidebar{
-    position: fixed;
-    top: 150px;
-    left: 0px;
-    background-color: lightgrey;
-    border-radius: 0px 25px 25px 0px;
-    width: 186px;
-    display: flex;
-    flex-direction: column;
-    gap: 61px;
-    font-size: 20px;
-    align-items: center;
-    padding: 40px;
+  position: fixed;
+  top: 110px;
+  left: 0px;
+  background-color: lightgrey;
+  border-radius: 0px 25px 25px 0px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+  font-size: 20px;
+  align-items: center;
+  padding: 40px;
+}
+
+.pronas{
+	background-color: lightgray;
+  border-radius: 15px;
+  margin-top: 35px;
+  margin-left: 185px;
+  margin-right: 20px;
+  padding: 25px;
+  font-size: 30px;
+}
+
+.season, .buy, .comments{
+  margin-left: 200px;
+  margin-top: 61px;
+	margin-bottom: 61px;
+  width: auto;
+}
+
+h3{
+	text-align: center;
+  padding-bottom: 61px;
+}
+
+.dishes{
+	border: none;
+  background-color: white;
+  height: 200px;
+  width: 280px;
+  font-size: 25px;
+  margin: 30px;
+}
+
+.dishes img{
+	width: auto;
+	height: 145px;
+  border-radius: 15px;
+}
+
+.dishes p{
+  margin-top: 5px;
+}
+
+.name{
+	background-color: lightgray;
+  border-radius: 15px;
+  height: 188px;
+  width: auto;
+}
+
+.etc{
+	display: flex;
+  justify-content: space-around;
+  font-size: 23px;
+  color: lightgrey;
+  padding-top: 10px;
 }
 
 footer{
-    background-color: lightgrey;
-    height: 568px;
+  background-color: lightgrey;
+  height: 568px;
 }
