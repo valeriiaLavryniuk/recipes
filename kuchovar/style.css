@@ -1,89 +1,180 @@
+#body{
+    background-color: #EADEDA;
+}
+
+title{
+    color: #C9184A;
+}
+
 nav{
-  display: flex;
-  justify-content: center;
-  gap: 202px;
-  text-transform: uppercase;
-  font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 202px;
+    text-transform: uppercase;
+    font-size: 20px;
 }
-
+  
 .nav-item{
-  background-color: lightgray;
-  border-radius: 25px;
-	color: black;
+    background-color: #FEFAE0;
+    border-radius: 25px;
+    color: black;
+}
+  
+  .sidebar{
+    position: fixed;
+    top: 110px;
+    left: 0px;
+    background-color: #F8EDEB;
+    border-radius: 0px 25px 25px 0px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+    font-size: 20px;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .pronas{
+    background-color: #F8EDEB;
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-left: 185px;
+    margin-right: 20px;
+    padding: 25px;
+    font-size: 30px;
+  }
+  
+  .season, .buy, .last{
+    padding-left: 200px;
+    margin-top: 61px;
+    margin-bottom: 61px;
+    width: 100%;
+  }
+  
+  h3{
+    text-align: center;
+    padding-bottom: 61px;
+  }
+  
+  .dishes{
+    border: none;
+    background-color: #FEFAE0;
+    border-radius: 15px;
+    /* height: 250px; */
+    width: 25%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .dishes img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .dishes p{
+    margin-top: 5px;
+  }
+
+  .dish_cnt{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .name{
+    background-color: #FEFAE0;
+    border-radius: 15px;
+    /* height: 188px; */
+    width: 100%;
+  }
+
+  .name img{
+    width: 100%;
+  }
+
+  .etc div{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .etc{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 23px;
+    padding-top: 10px;
+  }
+
+  .buy_cnt{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .products{
+    border: none;
+    background-color: #FEFAE0;
+    border-radius: 15px;
+    /* height: 250px; */
+    width: 25%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pr_name{
+    width: 100%;
+  }
+
+  .pr_name img{
+    width: 100%;
+  }
+
+  /* .price div{
+    display: flex;
+    gap: 10px;
+  } */
+  
+  .pr_price{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 23px;
+    padding-top: 10px;
+  }
+
+.pr_btn{
+    border: none;
 }
 
-.sidebar{
-  position: fixed;
-  top: 110px;
-  left: 0px;
-  background-color: lightgrey;
-  border-radius: 0px 25px 25px 0px;
-  width: 170px;
-  display: flex;
-  flex-direction: column;
-  gap: 61px;
-  font-size: 20px;
-  align-items: center;
-  padding: 40px;
+.comment{
+    background-color: #FEFAE0;
+    border-radius: 27px;
+    font-size: 20px;
+    height: 129px;
+    width: 900px;
+    display: flex;
+    
 }
 
-.pronas{
-	background-color: lightgray;
-  border-radius: 15px;
-  margin-top: 35px;
-  margin-left: 185px;
-  margin-right: 20px;
-  padding: 25px;
-  font-size: 30px;
+.nick{
+    font-size: 24px;
 }
 
-.season, .buy, .comments{
-  margin-left: 200px;
-  margin-top: 61px;
-	margin-bottom: 61px;
-  width: auto;
+.comment img{
+    width: 66px;
+    height: 66px;
 }
-
-h3{
-	text-align: center;
-  padding-bottom: 61px;
-}
-
-.dishes{
-	border: none;
-  background-color: white;
-  height: 200px;
-  width: 280px;
-  font-size: 25px;
-  margin: 30px;
-}
-
-.dishes img{
-	width: auto;
-	height: 145px;
-  border-radius: 15px;
-}
-
-.dishes p{
-  margin-top: 5px;
-}
-
-.name{
-	background-color: lightgray;
-  border-radius: 15px;
-  height: 188px;
-  width: auto;
-}
-
-.etc{
-	display: flex;
-  justify-content: space-around;
-  font-size: 23px;
-  color: lightgrey;
-  padding-top: 10px;
-}
-
-footer{
-  background-color: lightgrey;
-  height: 568px;
-}
+  
+  footer{
+    background-color: #FEFAE0;
+    height: 568px;
+  }
