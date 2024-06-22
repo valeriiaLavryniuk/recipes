@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Kuchovar</title>
-</head>
-<body id="body">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+let body = document.querySelector('body')
+let body_ukr = body.innerHTML
+let button = document.getElementById('translate')
+let lang = 'ua'
+function tr(){
+    
+}
+
+button.addEventListener('click', function(){
+    // let button = document.getElementById('translate')
+    if (lang == 'ua'){
+        body.innerHTML = `
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
           <span class="fs-4">KUCHOVAR</span>
         </a>
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link" id="nav_btn">Пошук</a>
+          <li class="nav-item"><a href="#" class="nav-link" id="nav_btn">Search</a>
             <svg id="search" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
             <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
             </svg></li>
@@ -23,36 +26,36 @@
         </ul>
     </header>
     <div class="sidebar">
-        <a href="#pronas">про нас</a>
-        <a href="#season">сезонне</a>
-        <a href="#buy" style="width: 60px;">купуй зараз</a>
-        <a href="#last">відгуки</a>
-        <a href="#footer" style="width: 100px;">додаткова інформація</a>
+        <a href="#pronas">about us</a>
+        <a href="#season">seasonal</a>
+        <a href="#buy" style="width: 60px;">buy now</a>
+        <a href="#last">comments</a>
+        <a href="#footer" style="width: 100px;">extra info</a>
     </div>
     <nav>
-        <a href="#" class="nav-link" id="nav-main">УСІ СТРАВИ</a>
-        <a href="#" class="nav-link" id="nav-main">НОВИНИ</a>
-        <a href="#" class="nav-link" id="nav-main">МАГАЗИН</a>
+        <a href="#" class="nav-link" id="nav-main">ALL DISHES</a>
+        <a href="#" class="nav-link" id="nav-main">NEWS</a>
+        <a href="#" class="nav-link" id="nav-main">SHOP</a>
     </nav>
     <main>
 		<div id="pronas" class="pronas">
-			<h4>ПРО НАС</h4>
-            <p>Усім привіт! На цьому сайті ми розповідаємо про цікаві страви та актуальні новинки зі світу кулінарії. Тут тобі можуть допомогти з вибором страв на якусь подію чи просто на посиденьки з близькими. У меню представлено багато різних пунктів, які могли би тебе зацікавити.</p>
+			<h4>ABOUT US</h4>
+            <p>Hello everyone! On this site, we talk about interesting dishes and current novelties from the world of cooking. Here they can help you choose dishes for an event or just for gatherings with loved ones. The menu has many different items that might interest you.</p>
 		</div>
 		<div id="season" class="season">
-  		<h3>СЕЗОННІ СТРАВИ</h3>
+  		<h3>SEASONAL DISHES</h3>
         <div class="dish_cnt">
   		<button class="dishes tort">
 			<div class="name">
 				<img src="img/tort.png"/>
-				<p>Полуничний пиріг</p>
+				<p>Strawberry pie</p>
             </div>
             <div class="etc">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="46" height="46" viewBox="0 0 50 50">
                         <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24.984375 6.9863281 A 1.0001 1.0001 0 0 0 24 8 L 24 22.173828 A 3 3 0 0 0 22 25 A 3 3 0 0 0 22.294922 26.291016 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 23.708984 27.705078 A 3 3 0 0 0 25 28 A 3 3 0 0 0 28 25 A 3 3 0 0 0 26 22.175781 L 26 8 A 1.0001 1.0001 0 0 0 24.984375 6.9863281 z"></path>
                     </svg>
-                    <p>30 хв</p>
+                    <p>30 min</p>
                 </div>
                 <div>
                     <img src="img/icon-meal.png" alt="">
@@ -64,14 +67,14 @@
         <button class="dishes milkshake">
 			<div class="name">
 				<img src="img/milkshake.png"/>
-				<p>Мілкшейк</p>
+				<p>Milkshake</p>
             </div>
             <div class="etc">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="46" height="46" viewBox="0 0 50 50">
                         <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24.984375 6.9863281 A 1.0001 1.0001 0 0 0 24 8 L 24 22.173828 A 3 3 0 0 0 22 25 A 3 3 0 0 0 22.294922 26.291016 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 23.708984 27.705078 A 3 3 0 0 0 25 28 A 3 3 0 0 0 28 25 A 3 3 0 0 0 26 22.175781 L 26 8 A 1.0001 1.0001 0 0 0 24.984375 6.9863281 z"></path>
                     </svg>
-                    <p>15 хв</p>
+                    <p>15 min</p>
                 </div>
                 <div>
                     <img src="img/icon-meal.png" alt="">
@@ -83,14 +86,14 @@
         <button class="dishes deruny">
 			<div class="name">
 				<img src="img/deruny.png"/>
-				<p>Деруни</p>
+				<p>Deruny</p>
             </div>
             <div class="etc">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="46" height="46" viewBox="0 0 50 50">
                         <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24.984375 6.9863281 A 1.0001 1.0001 0 0 0 24 8 L 24 22.173828 A 3 3 0 0 0 22 25 A 3 3 0 0 0 22.294922 26.291016 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 23.708984 27.705078 A 3 3 0 0 0 25 28 A 3 3 0 0 0 28 25 A 3 3 0 0 0 26 22.175781 L 26 8 A 1.0001 1.0001 0 0 0 24.984375 6.9863281 z"></path>
                     </svg>
-                    <p>15 хв</p>
+                    <p>15 min</p>
                 </div>
                 <div>
                     <img src="img/icon-meal.png" alt="">
@@ -102,14 +105,14 @@
         <button class="dishes varenyky">
 			<div class="name">
 				<img src="img/varenyky.png"/>
-				<p>Вареники</p>
+				<p>Varenyky</p>
             </div>
             <div class="etc">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="46" height="46" viewBox="0 0 50 50">
                         <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24.984375 6.9863281 A 1.0001 1.0001 0 0 0 24 8 L 24 22.173828 A 3 3 0 0 0 22 25 A 3 3 0 0 0 22.294922 26.291016 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 23.708984 27.705078 A 3 3 0 0 0 25 28 A 3 3 0 0 0 28 25 A 3 3 0 0 0 26 22.175781 L 26 8 A 1.0001 1.0001 0 0 0 24.984375 6.9863281 z"></path>
                     </svg>
-                    <p>60 хв</p>
+                    <p>60 min</p>
                 </div>
                 <div>
                     <img src="img/icon-meal.png" alt="">
@@ -121,14 +124,14 @@
   		<button class="dishes salad">
 			<div class="name">
 				<img src="img/salad.png"/>
-				<p>Салат</p>
+				<p>Salad</p>
             </div>
             <div class="etc">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="46" height="46" viewBox="0 0 50 50">
                         <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24.984375 6.9863281 A 1.0001 1.0001 0 0 0 24 8 L 24 22.173828 A 3 3 0 0 0 22 25 A 3 3 0 0 0 22.294922 26.291016 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 23.708984 27.705078 A 3 3 0 0 0 25 28 A 3 3 0 0 0 28 25 A 3 3 0 0 0 26 22.175781 L 26 8 A 1.0001 1.0001 0 0 0 24.984375 6.9863281 z"></path>
                     </svg>
-                    <p>20 хв</p>
+                    <p>20 min</p>
                 </div>
                 <div>
                     <img src="img/icon-meal.png" alt="">
@@ -140,14 +143,14 @@
         <button class="dishes oladky">
 			<div class="name">
 				<img src="img/oladky.png"/>
-				<p>Оладки</p>
+				<p>Оladky</p>
             </div>
             <div class="etc">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="46" height="46" viewBox="0 0 50 50">
                         <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24.984375 6.9863281 A 1.0001 1.0001 0 0 0 24 8 L 24 22.173828 A 3 3 0 0 0 22 25 A 3 3 0 0 0 22.294922 26.291016 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 23.708984 27.705078 A 3 3 0 0 0 25 28 A 3 3 0 0 0 28 25 A 3 3 0 0 0 26 22.175781 L 26 8 A 1.0001 1.0001 0 0 0 24.984375 6.9863281 z"></path>
                     </svg>
-                    <p>30 хв</p>
+                    <p>30 min</p>
                 </div>
                 <div>
                     <img src="img/icon-meal.png" alt="">
@@ -163,38 +166,38 @@
   		</div>
 
 		<div id="buy" class="buy">
-  		    <h3>КУПУЙ ЗАРАЗ</h3>
+  		    <h3>BUY NOW</h3>
             <div class="buy_cnt">
             <div class="products">
                 <div class="pr_name">
                     <img src="img/knyha.png"/>
-                    <p>Книга “Ukrainian cuisine in 70 dishes” з автографом</p>
+                    <p>The book “Ukrainian cuisine in 70 dishes” with autograph</p>
                 </div>
                 <div class="pr_price">
                     <p>650  ₴</p>
-                    <button class="pr_btn">КУПИТИ</button>
+                    <button class="pr_btn">BUY</button>
                 </div>
             </div>
 
             <div class="products">
                 <div class="pr_name">
                     <img src="img/sousy.png"/>
-                    <p>Набір соусів “Все включено”</p>
+                    <p>Set of sauces "All inclusive"</p>
                 </div>
                 <div class="pr_price">
                     <p>650  ₴</p>
-                    <button  class="pr_btn">КУПИТИ</button>
+                    <button  class="pr_btn">BUY</button>
                 </div>
             </div>
 
             <div class="products">
                 <div class="pr_name">
                     <img src="img/tshirt.png"/>
-                    <p>Футболка оверсайз “божеВІЛЬНІ”</p>
+                    <p>Oversized T-shirt “божеВІЛЬНІ”</p>
                 </div>
                 <div class="pr_price">
                     <p>795  ₴</p>
-                    <button  class="pr_btn">КУПИТИ</button>
+                    <button  class="pr_btn">BUY</button>
                 </div>
             </div>
             </div>
@@ -220,8 +223,8 @@
                 </div>
             </div>
         <div class="review">
-                <input class="review_input" type="text" placeholder="Напишіть свій відгук" size="40">
-                <button class="review_btn">Надіслати!</button>
+                <input class="review_input" type="text" placeholder="Write your comment" size="40">
+                <button class="review_btn">Send!</button>
             </div>
         </div>
 
@@ -242,15 +245,21 @@
             </svg>
         </div>
         <ul class="nav justify-content-center ">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Про нас</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Політика конфіденційности</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Privacy Policy</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
         </ul>
-        <p class="text-center text-body-secondary">Всі права на матеріали, розміщені на сайті kuchovar.com охороняються відповідно до законодавства України. Повне або часткове використання матеріалів сайту kuchovar.com без письмового дозволу Адміністрації сайту забороняється.</p>
+        <p class="text-center text-body-secondary">All rights to the materials posted on the kuchovar.com website are protected in accordance with the legislation of Ukraine. Full or partial use of the kuchovar.com site materials without the written permission of the Site Administration is prohibited.</p>
         <p class="text-center text-body-secondary">© 2024</p>
     </footer>
     <script src="script.js"></script>
     <script src="eng.js"></script>
-</body>
+        `
+        lang = 'eng'
+    } else{
+        body.innerHTML = body_ukr
+        lang = 'ua'
+    }
+    console.log(body_ukr)
 
-</html>
+})
